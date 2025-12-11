@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro do Titular</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cadastro do Titular</h1>
+</header>
+
+<div class="container">
+
+    <h2>Informações Pessoais</h2>
+
+    <form id="cadForm">
+
+        <div class="section-title">Dados do Titular</div>
+
+        <label>CPF:</label>
+        <input type="text" name="cpf" required>
+
+        <label>Data de nascimento:</label>
+        <input type="date" name="nascimento" required>
+
+        <label>Nome completo:</label>
+        <input type="text" name="nome" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label>CEP:</label>
+        <input type="text" name="cep" required>
+
+        <label>Número da residência:</label>
+        <input type="text" name="numero" required>
+
+        <label>Parente de referência:</label>
+        <input type="text" name="referencia">
+
+        <label>Celular:</label>
+        <input type="text" name="celular" required>
+
+        <div class="section-title">Informações do Cartão (apenas identificação)</div>
+
+        <label>Bandeira do cartão:</label>
+        <input type="text" name="bandeira">
+
+        <label>Últimos 4 dígitos:</label>
+        <input type="text" name="ultimos4">
+
+        <button type="submit">Enviar Cadastro</button>
+    </form>
+
+    <div class="msg sucesso" id="sucesso">Cadastro enviado com sucesso!</div>
+    <div class="msg erro" id="erro">Erro ao enviar. Tente novamente.</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
